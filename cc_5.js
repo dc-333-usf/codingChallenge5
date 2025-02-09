@@ -22,9 +22,15 @@ let cartItems = ["Shovel", "Lamp", "Wheelbarrow"]; //declare the array
  cartItems.pop(); //take off item at the end
  cartItems.unshift("Axe"); //add item to the beginning
  cartItems.shift(); //remove item from beginning
- console.log(cartItems); //log the array
+console.log(cartItems); //log the array
 
- //Task 4: Map method. Product availability scenario
- let prices = [100, 200, 300]; //declare array
- let discountedPrices = prices.map(n => n * 0.9); //use .map method to create a new array with discounted product prices
- console.log(discountedPrices); //log discounted prices
+
+//Task 4: Map method. Price adjustments scenario.
+let prices = [100, 200, 300]; //declare array
+let discountedPrices = prices.map(n => n * 0.9); //use .map method to create a new array with discounted product prices
+console.log(discountedPrices); //log discounted prices
+
+//Task 5: Filter method. Product availability.
+let inventory = [4, 0, 10, 0, 15, 6, 0, 2]; //declare inventory
+let updatedInventory = inventory.filter(num => num !== 0); //create a filtered array with only instances that are not zero
+console.log(updatedInventory); //log the updated, filtered array
