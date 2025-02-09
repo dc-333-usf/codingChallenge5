@@ -23,3 +23,8 @@ let cartItems = ["Shovel", "Lamp", "Wheelbarrow"]; //declare the array
  cartItems.unshift("Axe"); //add item to the beginning
  cartItems.shift(); //remove item from beginning
  console.log(cartItems); //log the array
+
+ //Task 4: Map method. Product availability scenario
+ let prices = [100, 200, 300]; //declare array
+ let discountedPrices = prices.map(n => n * 0.9); //use .map method to create a new array with discounted product prices
+ console.log(discountedPrices); //log discounted prices
