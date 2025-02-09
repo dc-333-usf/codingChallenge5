@@ -38,3 +38,7 @@ console.log(updatedInventory); //log the updated, filtered array
 //Task 6: Reduce method. Revenue calculation scenario.
 let sales = [500, 300, 200, 400]; //declare array for sales
 console.log(`Total Sales: ${sales.reduce((acc, curr) => acc + curr, 0)}`); //log to the console the array after using the reduce method to add the values
+
+//Task 7: find() method. Customer search scenario.
+let customers = ["Alice", "Bob", "Charlie", "David"]; //declare the array
+console.log(`User: ${customers.find(user => user === "Charlie")}`); //log to the console the method to find a specific name
