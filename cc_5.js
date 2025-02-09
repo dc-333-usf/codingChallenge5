@@ -42,3 +42,10 @@ console.log(`Total Sales: ${sales.reduce((acc, curr) => acc + curr, 0)}`); //log
 //Task 7: find() method. Customer search scenario.
 let customers = ["Alice", "Bob", "Charlie", "David"]; //declare the array
 console.log(`User: ${customers.find(user => user === "Charlie")}`); //log to the console the method to find a specific name
+
+//Task 8: Function declaration. Tax calculation scenario.
+function calculateTax(amount, taxRate = 0.07) { //declare function, create a default 7% tax rate
+    let tAmount = amount * taxRate; //the amount multiplied by the tax rate will return the amount of tax owed
+    return tAmount; //return the amount of tax
+}
+console.log(calculateTax(100)); //calculate tax on 100 dollars, only need first argument because default is set
