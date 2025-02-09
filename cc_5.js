@@ -49,3 +49,10 @@ function calculateTax(amount, taxRate = 0.07) { //declare function, create a def
     return tAmount; //return the amount of tax
 }
 console.log(calculateTax(100)); //calculate tax on 100 dollars, only need first argument because default is set
+
+//Task 9: Function expression. Discount application scenario.
+let applyDiscount = function(price, discount) { //create function expression
+    let disPrice = price * (1 - discount); //calculate discounted price based on price multipled by 1 subtracted by the discount amount as a decimal
+    return disPrice; //then return the discounted price
+}
+console.log(applyDiscount(100, 0.2)); //log to console a 20 percent discount on 100 dollars
