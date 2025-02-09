@@ -1,8 +1,8 @@
-//Task 1: Object properties. Customer profile scenario
+//Task 1: Object properties. Customer profile scenario.
 let object = {name: "John Doe", age: 35, email: "john.doe@email.com"}; //declaring customer information in this object
 console.log(`Customer Name: ${object.name} \nCustomer Age: ${object.age} \nCustomer Email: ${object.email}`); //logging to console customer information using template literals, using \n to line break
 
-//Task 2: Object methods. Order details scenario
+//Task 2: Object methods. Order details scenario.
 let order = {
     orderId: 12345,
     totalAmount: 150,
@@ -15,3 +15,11 @@ let order = {
 };
 console.log(`Order info:`); //console log a title for the function, could also include this in the function itself
 order.displayOrder(); //call the function
+
+//Task 3: Array manipulation. Shopping cart scenario.
+let cartItems = ["Shovel", "Lamp", "Wheelbarrow"]; //declare the array
+ cartItems.push("Pickaxe"); //add item to the end
+ cartItems.pop(); //take off item at the end
+ cartItems.unshift("Axe"); //add item to the beginning
+ cartItems.shift(); //remove item from beginning
+ console.log(cartItems); //log the array
