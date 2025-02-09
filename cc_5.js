@@ -56,3 +56,7 @@ let applyDiscount = function(price, discount) { //create function expression
     return disPrice; //then return the discounted price
 }
 console.log(applyDiscount(100, 0.2)); //log to console a 20 percent discount on 100 dollars
+
+//Task 10: Arrow function. Loyalty points scenario.
+const calculatePoints = (PurchaseAmount) => Math.floor(PurchaseAmount / 10); //Create arrow function to return the point amount, rounded down. 
+console.log(calculatePoints(209)); //Return the amount of points on 209 dollar purchase
