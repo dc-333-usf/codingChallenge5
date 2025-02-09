@@ -34,3 +34,7 @@ console.log(discountedPrices); //log discounted prices
 let inventory = [4, 0, 10, 0, 15, 6, 0, 2]; //declare inventory
 let updatedInventory = inventory.filter(num => num !== 0); //create a filtered array with only instances that are not zero
 console.log(updatedInventory); //log the updated, filtered array
+
+//Task 6: Reduce method. Revenue calculation scenario.
+let sales = [500, 300, 200, 400]; //declare array for sales
+console.log(`Total Sales: ${sales.reduce((acc, curr) => acc + curr, 0)}`); //log to the console the array after using the reduce method to add the values
